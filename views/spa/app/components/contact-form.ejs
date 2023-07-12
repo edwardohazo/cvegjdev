@@ -1,0 +1,13 @@
+<legend>Send me your contact!</legend>
+<input type="text" name="name" placeholder="Write your name"
+  title="Name field only accepts letters and blank spaces" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\\s]+$" required>
+<input type="email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" name="email" placeholder="Write your email" title="Incorrect Email" required/>
+<input type="text" name="subject" placeholder="Subject to address" title="El Asunto es requerido" required>
+<textarea name="comments" cols="50" rows="5" placeholder="Write your comments"
+  title="Your comment must not exceed 255 characters." data-pattern="^.{1,255}$" required></textarea>
+<input class="submit" type="submit" value="Send">
+<div class="contact_form-loader none">
+</div>
+<div class="contact_form-response none">
+  <p>Thank you for reaching out! I will get back to you as soon as possible.</p>
+</div>

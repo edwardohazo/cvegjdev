@@ -1,0 +1,54 @@
+#session13 {
+    margin-bottom: 0;
+    height: 200vh;
+}
+
+#session13 input {
+    outline: none;
+    margin-bottom: 10px;
+    background: transparent;
+    border: none;
+    color: #000;
+    font-size: 12px;
+    line-height: normal;
+    text-shadow: 0 0 0 rgb(255 255 255 / 0%);
+    height: 34px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    margin: 0;
+}
+
+.card {
+    height: 100%;
+    background-color: var(--black);
+    color: var(--yellow);
+    transition: all 0.3s ease-out;
+    font-size: bold;
+}
+
+.card img {
+    width: 400px;
+}
+
+.card figcaption {
+    padding: 1rem;
+}
+
+.filter {
+    visibility: hidden;
+    opacity: 0;
+    order: 1;
+}
+
+@media only screen and (max-width: 900px) {
+    #session13 {
+        margin-bottom: 0;
+        height: 610vh;
+    }
+}

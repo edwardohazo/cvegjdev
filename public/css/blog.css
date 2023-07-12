@@ -1,0 +1,95 @@
+html {
+  font-family: 'Kurale', serif;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.loader {
+  display: 'none';
+  margin: auto;
+  margin-top: 20%;
+}
+a {
+  color: #01579b;
+}
+a:hover {
+  opacity: 1.75;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+hr {
+  border: thin solid #01579b;
+  margin: 3rem auto;
+  width: 80%;
+}
+.site {
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 50%;
+  text-align: center;
+}
+.post {
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 80%;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: #f3f3f3;
+}
+.post-author img {
+  border-radius: 50%;
+}
+.post-date {
+  margin: 1rem auto;
+  display: block;
+}
+.post-excerpt,
+.post-categories,
+.post-tags,
+.post-content {
+  text-align: left;
+}
+.post-content img {
+  margin: auto;
+}
+.loader {
+  border: 5px solid #f3f3f3; /* Light grey */
+  border-top: 5px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Personal Tecnic Blogs */
+.main-blogs {
+  margin: 10%;
+}
+.main-blogs p {
+  margin-right: 2%;
+}
+
+@media only screen and (max-width: 590px) {
+  .main-blogs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+

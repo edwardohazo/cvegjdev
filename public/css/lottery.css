@@ -1,0 +1,19 @@
+.players {
+    list-style: none;
+}
+
+.player {
+    margin: 10px 0;
+}
+
+#session11 button {
+    list-style: none;
+    border: none;
+    width: 120px;
+    height: 40px;
+    margin: 20px 20px;
+    background-color: rgb(250, 99, 99);
+    color: #fff;
+    font-weight: bold;
+}
+
