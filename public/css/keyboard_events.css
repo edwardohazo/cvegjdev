@@ -1,0 +1,17 @@
+* {
+    text-align: center;
+}
+
+.stage {
+    display: flex;
+    height: 70vh;
+    background-color: #000;
+}
+
+.ball {
+    margin: auto;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color:#f4fa36;
+}

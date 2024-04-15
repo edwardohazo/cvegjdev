@@ -1,0 +1,19 @@
+#responsive-tester input {
+    border: none;
+    outline: none;
+    margin: 10px 0;
+}
+
+#responsive-tester :nth-child(7), #responsive-tester :nth-child(8) {
+    border: none;
+    width: 120px;
+    height: 40px;
+    margin: 20px 20px;
+    background-color: rgb(250, 99, 99);
+    color: #fff;
+    font-weight: bold;
+}
+
+#responsive-tester input::placeholder {
+    color: #000;
+  }

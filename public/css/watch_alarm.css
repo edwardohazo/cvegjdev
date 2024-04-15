@@ -1,0 +1,13 @@
+#session2 h3 {
+    margin-bottom: 40px;
+}   
+
+#session2 button {
+    display: inline-block;
+    width: 13rem;
+    height: 5rem;
+    background-color: rgb(250, 99, 99);
+    margin: 2rem;
+    font-weight: bold;
+    color: #fff;
+}   
