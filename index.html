@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es" data-dark class="docu">
+	<head>
+		<title>DOM | Practices</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+			integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<!-- Styles Css -->
+		<link rel="stylesheet" href="public/css/dom-practicas.css"></link>
+		 <!-- Styles Css sessions-->
+		<link rel="stylesheet" href="public/css/countdown.css"></link>
+		<link rel="stylesheet" href="public/css/responsive-tester.css"></link>
+		<link rel="stylesheet" href="public/css/conection_state.css"></link>
+		<link rel="stylesheet" href="public/css/search_filter.css"></link>
+		<link rel="stylesheet" href="public/css/lottery.css"></link>
+		<link rel="stylesheet" href="public/css/slider.css"></link>
+		<link rel="stylesheet" href="public/css/watch_alarm.css"></link>
+		<link rel="stylesheet" href="public/css/responsive.css"></link>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Krub&family=Staatliches&display=swap"
+			rel="stylesheet"
+		/>
+		
+	</head>
+	<body data-dark>
+		<style id="dynamic-styles"></style>
+		<!-- Ir Arriba -->
+		<div class="go-top">
+			<span class="fas fa-angle-up"></span>
+		</div>
+
+		<!-- Menu de Navegacion -->
+		<header id="header">
+			<nav class="menu">
+				<div class="logo-box">
+					<h1>
+						<a href="index.html">CV Web Design</a>
+					</h1>
+
+					<span class="hamburger-inner btn-menu"><i class="fas fa-bars"></i></span>
+
+				</div>
+				<div class="list-container">
+					<ul class="lists">
+						<li><a class="sessions-menu" href="https://egj-react-app.netlify.app/" class="active">React App</a></li>
+						<li><a class="sessions-menu" href="https://ember-flipflops.netlify.app/">PayPal Shop</a></li>
+						<li><a class="sessions-menu" href="https://ocean-experience-ssr.onrender.com/en/index">Booking App</a></li>
+						<li><a class="sessions-menu" href="views/stripe-payments.html" class="active">Stripe Shop</a></li>
+						<li><a class="sessions-menu" href="views/blog.html">Wordpress REST API | Infinite Scroll</a></li>
+						<li><a class="sessions-menu" href="views/spa/index.html">Wordpress SPA/REST API on Css Tricks</a></li>
+						<li><a class="sessions-menu" href="views/blogs.html" class="active">Blogs</a></li>
+						<li><a class="sessions-menu" href="#contact_form">Contact Form with AJAX</a></li>
+						<li><a class="sessions-menu" href="#session1">Responsive Slider</a></li>
+						<li><a class="sessions-menu" href="#session2">Digital Watch and Alarm</a></li>
+						<li><a class="sessions-menu" href="#session3">Local Storage</a></li>
+						<li><a class="sessions-menu" href="#session4">Countdown</a></li>
+						<li><a class="sessions-menu" href="#session5">Dark Mode</a></li>
+						<li><a class="sessions-menu" href="#session6">Responsive  with JS</a></li>
+						<li><a class="sessions-menu" href="#session7">Responsive  Tester</a></li>
+						<li><a class="sessions-menu" href="#session8">Connection Status</a></li>
+						<li><a class="sessions-menu" href="#session9">Web Cam Detection</a></li>
+						<li><a class="sessions-menu" href="#session10">Geolocalocation</a></li>
+						<li><a class="sessions-menu" href="#session11">Programing Language Lottery</a></li>
+						<li><a class="sessions-menu" href="views/keyboard-events.html">Keyboard Events</a></li>
+						<!-- <li><a class="sessions-menu" href="#session13">Search Filters</a></li> -->
+						<li><a class="sessions-menu" href="#session14">Scroll Spy</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<!-- Imagen Header -->
+			<div class="img-header">
+				<div class="welcome">
+					<h1>Eduardo Jasso</h1>
+					<hr />
+					<p>Web Developer</p>
+					<button id="abajo">Contacto</button>
+				</div>
+			</div>
+
+			<div class="skew-abajo"></div>
+		</header>
+
+		<!-- TO SCROLLSPY -->
+		<!-- <aside class="panel">
+			
+		</aside> -->
+
+		<main class="main">
+				<!-- About me -->
+		<section class="about-me">
+			<div class="info-container">
+				<h1 class="info-container__h1">
+					<span class="hi">Hi! 👋🏻</span>
+					<img class="hello-avatar" src="./public/uploads/perfil-shadow.png" alt="eduardojasso">
+				</h1>
+				<div class="social-media-container">
+						<div class="social-media-container_column-one"></div>
+						<ul class="social-media-container_column-two">
+							<li>
+								<a href="https://www.instagram.com/eduardo.hazo/" target="_blank">
+									<!-- Instagram -->
+									<i class="fab fa-instagram fa-2x" data-darkSocialBackground></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/eduardogonzalezjasso/" target="_blank">
+									<!-- Linkedin -->
+									<i  class="fab fa-linkedin-in fa-2x" data-darkSocialBackground></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://stackoverflow.com/users/20542266/wagondragonwagon" target="_blank">
+									<!-- Stack overflow -->
+									<i class="fab fa-stack-overflow fa-2x" data-darkSocialBackground></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/edwardohazo" target="_blank">
+									<!-- Github -->
+									<i class="fab fa-github fa-2x" data-darkSocialBackground></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://dribbble.com/egjwebdev" target="_blank">
+								 <!-- Dribbble -->
+								 <i class="fab fa-dribbble fa-2x" data-darkSocialBackground></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://api.whatsapp.com/send?phone=5213325935537" target="_blank">
+									<!-- Whatsapp -->
+									<i class="fab fa-whatsapp fa-2x" data-darkSocialBackground></i>
+								</a>
+							</li>
+						</ul>
+				</div>
+					<!-- darkmode -->
+				<h1>About me:</h1>
+				<!-- darkmode -->
+				<p>Hello! 
+					<br>
+					<br>
+					Welcome to my web site! I'm excited that you're here and that you can know more about my professional experience and skills.
+					<br>
+					<br>
+					My full name is Eduardo González Jasso. Im a web programmer and content creator located in Guadalajara Jal. México. 
+					<br>
+					<br>
+					As a <b>web designer</b> I have 2 years of experience on the wonderful world of the web. Enjoy working closely with team members for learning new things and use my knowledge and skills to design responsive and attractive web sites.
+					<br>
+					<br>
+					Adept to troubleshooting complex problems, finding solutions and ready to apply my passion for coding.
+					<br>
+					<br>
+					As a <b>content creator</b> I have been working on the flip flops industry over 4 years to a company named Industrias Sandarey S.A. de C.V.
+					</p>
+					<span><a href="./public/uploads/CVEGJDEV2023.pdf" class="cv-link" download>Click here to download mi CV</a> and know me a little bit more!</span>
+					<hr>
+					<h2>WEB STACK</h2>
+					<ul>
+							<li></li>
+							<li>Javascript</li>
+							<li>DOM API</li>
+							<li>Node Js</li>
+							<li>React Js</li>
+							<li>REST</li>
+							<li>MERN</li>
+							<li>Git</li>
+							<li>GitHub</li>
+							<li>Basic knowledge of Wordpress API</li>
+							<li>Proficient in HTML5, CSS3, Responsive Design and Media Queries</li>
+							<li>Have an excelent managment and comunication skills</li>
+					</ul>
+			</div>
+		</section>
+
+				<h2>DOM PLAYGROUND</h2>
+				<section id="session1" class="section">
+					<h3>Responsive Slider</h3>
+					<div class="slider">
+						<div class="slider-slides">
+							<div class="slider-slide active">
+								<img src="./public/uploads/imagejs.jpg" alt="Javascript">
+							</div>
+							<div class="slider-slide">
+								<img src="./public/uploads/cimagecss.jpg" alt="CSS">
+							</div>
+							<div class="slider-slide">
+								<img src="./public/uploads/imagehtml.jpg" alt="HTML">
+							</div>
+							<div class="slider-slide">
+								<img src="./public/uploads/imagew3c.jpg" alt="MERN">
+							</div>
+							<div class="slider-btns">
+								<a class="prev" href="#">&laquo;</a>
+								<a class="next" href="#">&raquo;</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="session2" class="section">
+					<h3 data-darkBackground>Digital Watch and Alarm</h3>
+					<div id="watch"></div>
+					<button data-darkBackground id="enable-watch">PLAY WATCH</button>
+					<button data-darkBackground id="disable-watch">STOP WATCH</button>
+					<button data-darkBackground id="enable-alarm">PLAY ALARM</button>
+					<button data-darkBackground id="disable-alarm">STOP ALARM</button>
+				</section>
+				<section id="session3" class="section">
+					<h3>Local Storage</h3>
+					<p>The dark mode or light mode keeps on local storage memory after <br>
+						 browser session has been closed</p>
+				</section>
+				<section id="session4" class="section">
+						<h3>Countdown to new year 🎉</h3>
+						<div id="countdown"></div>
+				</section>
+				<section id="session5" class="section">
+						<h3>Dark Mode</h3>
+				</section>
+				<section id="session6" class="section">
+					<h3>Responsive Design with JS</h3>
+					<div id="youtube"></div>
+					<div id="gmaps"></div>
+				</section>
+				<section id="session7" class="section">
+					<h3>Responsive Tester</h3>
+					<form id="responsive-tester">
+						<input data-darkBackground name="direction" type="url" placeholder="URL" required>
+						<br>
+						<input data-darkBackground name="width" type="text" placeholder="width" required>
+						<br>
+						<input data-darkBackground name="height" type="text" placeholder="height" required>
+						<br>
+						<input data-darkBackground name="test" type="submit" value="TEST">
+						<input data-darkBackground name="close" type="button" value="CLOSE">
+					</form>
+				</section>
+				<section id="session8" class="section">
+						<h3>Connection State</h3>
+						<p>On web developer tools, inside application tab, turn on and off<br>
+							 wifi connection to check a connection advice</p>
+				</section>
+				<section id="session9" class="section">
+					<h3>Web Cam Detection</h3>
+					<video class="webcam" id="web-cam"></video>
+				</section>
+				<section id="session10" class="section">
+					<h3>Geolocation</h3>
+					<div id="geolocation"></div>
+				</section>
+				
+				<section id="session11" class="section">
+					<h3>Programing Language Draw</h3>
+					<ul class="players">
+						<li class="player">Javascript</li>
+						<li class="player">Python</li>
+						<li class="player">Dart</li>
+						<li class="player">Ruby</li>
+						<li class="player">Go</li>
+						<li class="player">PHP</li>
+						<li class="player">Visual Basic</li>
+						<li class="player">Pearl</li>
+						<li class="player">Rust</li>
+						<li class="player">JAVA</li>
+					</ul>
+					<button data-darkBackground id="winner-btn">Show Winner</button>
+				</section>
+				
+				<script type="module">
+							import { ContactForm } from './public/componentes/contactform.js';
+							setTimeout(()=>{          
+							let $main = document.querySelector(".main");
+							$main.appendChild(ContactForm());
+							},100);
+				</script>
+
+		</main>
+
+		<button class="dark-theme-btn">🌙</button>
+
+		<!-- Footer -->
+		<footer class="footer">
+
+			<div class="ejeZfooter">
+				<div class="footer-content">
+					<div class="footer-text">
+						<p>&copy; Web Artists - 2022 | All rights reserved to Eduardo Jasso</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="https://kit.fontawesome.com/35db202371.js"></script>
+		<script src="public/scripts/dom_sessions.js" type="module"></script>
+		<script src="public/scripts/dom-scripts.js" type="module"></script>
+		<script src="public/controllers/includeDomPracticas.js" type="module"></script>
+	</body>
+</html>
+

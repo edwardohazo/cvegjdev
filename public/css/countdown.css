@@ -1,0 +1,13 @@
+@media only screen and (min-width:700px){
+    #session4 {
+        position: fixed;
+        bottom: 0;
+        right: 15px;
+        margin: 0;
+    }
+    
+    #session4 h3 {
+        text-align: left;
+        font-size: 12px;
+    }
+}

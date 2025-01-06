@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.encabezado {
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+.web-services {
+    margin: auto;
+    display: grid;
+    width: 90%;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:  repeat(2, 1fr);
+    grid-gap: 2%;
+}
+img {
+    width: 100%;
+}
+.service {
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.service:hover {
+    transform: scale(.9);
+}
+.service figcaption {
+    background-color:  #369efa;
+    padding: 0.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+@media screen and (max-width: 550px) {
+    .web-services {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:  repeat(5, 1fr);
+        grid-gap: 2%;
+        width: 90%;
+    }
+   
+  }
+
